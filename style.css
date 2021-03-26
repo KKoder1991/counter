@@ -5,6 +5,11 @@ body {
     background-color: #e8a87c;
 }
 
+h1{
+    font-size: 92px;
+    color: #b1d7d8;
+}
+
 .button {
     text-align: center;
     display: inline-block;
