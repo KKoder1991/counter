@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    text-align: center;
+    background-color: #e8a87c;
+}
+
+.button {
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    background-color: #c38d9e;
+    border: 3px solid #c38d9e;  
+}
+
+.button:hover{
+    background-color: white;
+    border: 3px solid white;
+    transition: all 0.2s ease-in;
+}
+
+span{
+    font-size: 94px;
+}
