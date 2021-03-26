@@ -3,4 +3,18 @@ let count = 0;
 
 // Select the different parts of the DOM.
 const counter_span = document.querySelector("#value");
-const buttons = document.querySelector("buttons");
+const buttons = document.querySelectorAll(".button");
+
+buttons.forEach(function (button) {
+    button.addEventListener('click', function (e) {
+        const styles = e.currentTarget.classList;
+        if (styles.contains("decrease")){
+            count--;
+        } else if (styles.contains("increase")){
+            count++;
+        } else {
+            count = 0;
+        }
+        value.textContent = count;
+    });
+});
