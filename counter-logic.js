@@ -16,5 +16,14 @@ buttons.forEach(function (button) {
             count = 0;
         }
         value.textContent = count;
+        if ( count > 0 ){
+            value.style.color = "#41b3a3";
+        }
+        if (count < 0){
+            value.style.color = "#e27d60";
+        }
+        if (count === 0){
+            value.style.color = "white";
+        }
     });
 });
